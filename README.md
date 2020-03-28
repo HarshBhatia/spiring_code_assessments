@@ -1,4 +1,4 @@
-![spiring logo][logo]
+<img src="./logo.png" alt="spiring logo" style="width:300px;"/>
 
 ## Code assesments
 
@@ -18,4 +18,3 @@
 3. You are not allowed to use the internet while taking the assessment.
 4. You can use the `node` interpreter and the browser for running your code.
 
-[logo]: ./logo.png
