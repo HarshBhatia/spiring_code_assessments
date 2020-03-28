@@ -1,4 +1,4 @@
-![spiring logo][logo]
+<img src="./logo.png" alt="spiring logo" style="width:300px;"/>
 
 ## Code assesments
 
