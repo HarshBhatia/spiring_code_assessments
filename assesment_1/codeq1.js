@@ -1,19 +1,16 @@
-/*
-In this question you have to create your very own router which acts as a
-switch router and displays the passed component when the window path matches the one
-that is specified in its attribute.
-
-HINT: 
-1) document.location.pathname returns the path after the host url
-2) props.children returns components passed as children to a component.
-*/
-
-//COPY CODE BELOW IN YOUR ENVIRONMENT
-
-// ONLY CHANGE CODE FROM HERE
+import React from "react";
+import "./App.css";
+let i;
+// ONLY CHANGE CODE FROM HERE // children.props has route props
 function MySwitchRouter({ children }) {
-  return <p>Router code here</p>;
+  for (i = 0; i < children.length; i++) {
+    if (document.location.pathname === children[i].props.path) {
+      console.log("problme is in return");
+      return children[i].props.component()
+    }
+  }
 }
+
 function Route(props) {
   return <h3>route code here.</h3>;
 }
@@ -43,3 +40,5 @@ function Home() {
 function Profile() {
   return <h1>Profile!</h1>;
 }
+
+export default App;
